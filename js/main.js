@@ -27,3 +27,13 @@
    }
 
 })
+
+/*
+ * Add correct download href for each platform
+ * Or hide button if user visits with an unsupported platform
+ */
+const os = platform.os.family;
+
+if (os.indexOf('OS X') === -1) {
+  $('#pulse-download').hide()
+}

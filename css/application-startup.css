@@ -1,3 +1,11 @@
+/* primary button override */
+
+.btn.btn-primary {
+  background-color: #333;
+  border-color: #555;
+  border-radius: 0;
+}
+
 /* navbar */
 .polyledger-navbar {
   font-weight: 500;
@@ -19,10 +27,16 @@
     bottom: 0;
   }
 }
+.polyledger-header {
+  background-color: #f8f8f8;
+}
+.navbar-brand {
+  margin-top: -5px;
+}
 
 /* ribbon block */
 .polyledger-ribbon {
-  background: #fff;
+  background: #f8f8f8;
 }
 .polyledger-ribbon .container {
   padding-left: 0;

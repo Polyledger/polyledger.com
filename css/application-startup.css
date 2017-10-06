@@ -1,9 +1,10 @@
 /* primary button override */
 
-.btn.btn-primary {
+a.btn.btn-dark, input.btn.btn-dark {
   background-color: #333;
   border-color: #555;
   border-radius: 0;
+  color: #fff;
 }
 
 /* navbar */
@@ -15,18 +16,6 @@
 
 
 /* header block */
-.trading-animation {
-  min-width: 100%;
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  min-height: 50vh;
-}
-@media (min-width: 768px) {
-  .trading-animation {
-    bottom: 0;
-  }
-}
 .polyledger-header {
   background-color: #f8f8f8;
 }

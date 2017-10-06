@@ -7,6 +7,12 @@ a.btn.btn-dark, input.btn.btn-dark {
   color: #fff;
 }
 
+@media (max-width: 760px) {
+  input.btn.btn-dark {
+    width: 100%;
+  }
+}
+
 /* navbar */
 .polyledger-navbar {
   font-weight: 500;

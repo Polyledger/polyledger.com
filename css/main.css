@@ -89,10 +89,6 @@ textarea {
    Polyledger custom styles
    ========================================================================== */
 
-.block-xs-top {
-  padding-top: 1.5rem;
-}
-
 .block-xs-top > .container {
   display: flex;
   flex-direction: column;

@@ -41,13 +41,7 @@
           <a href="#about" data-target="#stage" data-toggle="stage">About</a>
         </li>
         <li>
-          <a href="#traders" data-target="#stage" data-toggle="stage">Traders</a>
-        </li>
-        <li>
-          <a href="#developers" data-target="#stage" data-toggle="stage">Developers</a>
-        </li>
-        <li>
-          <a href="#open-account" data-target="#stage" data-toggle="stage">Open Account</a>
+          <a href="#open-account" data-target="#stage" data-toggle="stage">Invest</a>
         </li>
       </ul>
     </div>
@@ -73,12 +67,6 @@
                   <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#traders">Traders</a>
-                </li>
-                <li>
-                  <a href="#developers">Developers</a>
-                </li>
-                <li>
                   <a href="#open-account">Invest</a>
                 </li>
               </ul>
@@ -92,7 +80,7 @@
                 <h1 class="block-title m-b-sm">Your automated cryptocurrency advisor.</h1>
                 <p class="lead m-b-md">Join today to receive a diversified cryptocurrency portfolio.</p>
                 <a class="btn btn-dark btn-lg" href="#open-account" style="margin-top: 0.5rem;">Open an Account</a>
-                <a class="btn btn-dark btn-lg" href="#about" style="background-color: #5a607c; margin-top: 0.5rem;">Learn more</a>
+                <a class="btn btn-dark btn-lg" href="#details" style="background-color: #5a607c; margin-top: 0.5rem;">Learn more</a>
               </div>
             </div>
             <img src="img/landing.png" width="100%">
@@ -101,7 +89,7 @@
       </div>
 
       <div class="block polyledger-ribbon">
-        <div class="container m-b-md">
+        <div class="container m-b-md" id="details">
           <h2 class="text-center">Eligibility &amp; Details</h2>
           <div class="col-md-6">
             <ul style="border: 1px solid #333; padding-top: 15px;">
@@ -165,73 +153,6 @@
             <div class="col-sm-4 p-x-md m-b-lg">
               <img class="m-b animated" src="./img/data-report.png" width="150" id="animated-6">
               <p><strong>Better record-keeping.</strong> We provide you with the necessary tax documents to report your income.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="block block-secondary polyledger-pulse-block" id="traders">
-        <div class="container">
-          <div class="row polyledger-align-center">
-            <div class="col-sm-6">
-              <img class="polyledger-pulse animated" src="./img/pulse.png" id="animated-7">
-            </div>
-            <div class="col-sm-6">
-              <h1>Pulse</h1>
-              <h6 class="text-muted text-uppercase">Cryptocurrency Market Data Desktop App</h6>
-              <h3 class="m-t-0">Make informed decisions with historical &amp; real-time data.</h3>
-              <p class="lead m-b-md">The easiest way to get attuned to the cryptocurrency markets.</p>
-              <div class="row hidden-sm">
-                <div class="col-sm-6 m-b-md">
-                  <h5 class="m-y-0">All major currencies supported</h5>
-                  <p>Market data for the top 100 coins and tokens are available in any major fiat currency&mdash;USD, EUR, JPY, and more.</p>
-                </div>
-                <div class="col-sm-6">
-                  <h5 class="m-y-0">Fast, easy, and convenient</h5>
-                  <p>It's a desktop app, the fastest way to check the market. Currently supported for macOS.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <a class="btn btn-dark btn-lg m-y-md" id="pulse-download" download href="https://github.com/polyledger/pulse/releases/download/v0.0.4-alpha/Pulse-macOS-0.0.4.dmg"><i class="icon icon-download"></i> Download</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="block block-inverse block-secondary polyledger-code-block" style="background-color: #2C3E50" id="developers">
-        <div class="container">
-          <div class="row polyledger-align-center">
-            <div class="col-sm-5 col-sm-push-7">
-              <pre class="polyledger-code">
-<span>>>></span> from polyledger import lattice
-<span>>>></span> portfolio = lattice.Portfolio({'USD': 1000000})
-<span>>>></span> portfolio.trade_asset(200000, 'USD', 'BTC')
-<span>>>></span> portfolio.assets
-<span>{'USD': 80000, 'BTC': 45.884398845548525}</span>
-<span>>>></span> pipeline = lattice.HistoricRatesPipeline('BTC-USD', '2015-01-01', '2017-06-01', 3600)
-<span>>>></span> pipeline.to_file('BTC_USD__hourly')
-<span>Requesting data from <span style="color: #57C2DC; text-decoration: underline;">https://api.gdax.com</span>...</span>
-<span><span style="color: #57C2DC;">INFO</span> - API requests required: 106</span>
-<span><span style="color: #57C2DC;">INFO</span> - Time interval per request: 720000 seconds</span>
-<span><span style="color: #57C2DC;">INFO</span> - Receiving data partition 106/106</span>
-<span><span style="color: #3bce7f;">SUCCESS</span> - Write to BTC_USD__2015_01_01__2017_06_01__hourly.csv complete.</span>
-<span>>>></span> &marker;
-              </pre>
-            </div>
-
-            <div class="col-sm-6 col-sm-pull-5">
-              <h1>Developer Platform</h1>
-              <h6 class="text-muted text-uppercase">Coming soon</h6>
-              <h4 class="m-t-0">A cryptocurrency backtesting engine and data API.</h4>
-              <p class="lead m-b-md text-muted">Polyledger is in the early days of development. Sign up to get more information about our data API.</p>
-              <h2 class="m-t-0">
-                <strong class="text-ribbon text-ribbon-info">
-                  <span>More info soon</span>
-                </strong>
-              </h2>
             </div>
           </div>
         </div>
@@ -596,7 +517,7 @@
               <ul class="list-unstyled list-spaced">
                 <li class="m-b"><h6 class="text-uppercase">About</h6></li>
                 <li class="text-muted">
-                 Polyledger is an organization based in Palo Alto and Berkeley, California</a>. Our goal is to make diversified cryptocurrency investing hands-off and easy. You can focus on your life while we grow and preserve your crypto wealth.
+                 Polyledger is an organization based in Palo Alto and Berkeley, California</a>. Our goal is to make diversified cryptocurrency investing hands-off and easy. We believe in the power of cryptocurrencies and blockchains to create a more stable and efficient financial system.
                 </li>
               </ul>
             </div>
@@ -604,7 +525,7 @@
               <ul class="list-unstyled list-spaced">
                 <li class="m-b"><h6 class="text-uppercase">Join the project</h6></li>
                 <li class="text-muted">
-                 Polyledger is looking to build a core team of engineers, designers, product managers, and growth marketers. Send a quick note to <a href="mailto:info@polyledger.com">info@polyledger.com</a> if you're interested in creating the future of investing.
+                 Polyledger is looking to build a core team of software engineers and designers. Send a quick note to <a href="mailto:info@polyledger.com">info@polyledger.com</a> if you're interested in creating the future of investing.
                 </li>
               </ul>
             </div>
@@ -638,9 +559,6 @@
       (function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" "); for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
       mixpanel.init("35592caff4a24dda9c74cf71e3e7552d");
       mixpanel.track("Website visit");
-      $('#pulse-download').click(() => {
-        mixpanel.track("Pulse downloaded")
-      })
     </script>
     <!-- end Mixpanel -->
   </body>

@@ -11,6 +11,9 @@ a.btn.btn-dark, input.btn.btn-dark {
   input.btn.btn-dark {
     width: 100%;
   }
+  .polyledger-code-block {
+    margin-top: 50px !important;
+  }
 }
 
 /* navbar */
@@ -42,6 +45,7 @@ a.btn.btn-dark, input.btn.btn-dark {
 
 /* pulse block */
 .polyledger-pulse-block {
+  margin-top: 90px;
   padding-bottom: 60px;
 }
 img.polyledger-pulse {
@@ -56,6 +60,7 @@ img.polyledger-pulse {
 
 /* code block */
 .polyledger-code-block {
+  margin-top: 90px;
   background-color: #262F36;
   overflow: hidden;
 }

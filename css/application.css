@@ -73,7 +73,7 @@ a.btn.btn-dark, input.btn.btn-dark, button.btn.btn-dark {
 /* marketing grid block */
 .polyledger-block-marketing-grid {
   background-color: #262F36;
-  color: #fff;
+  color: #fff !important;
 }
 .polyledger-block-marketing-grid h3 {
   color: #fff;

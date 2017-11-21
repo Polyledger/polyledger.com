@@ -28,7 +28,7 @@ a.btn.btn-dark, input.btn.btn-dark, button.btn.btn-dark {
 .polyledger-navbar {
   font-weight: 500;
   letter-spacing: .05em;
-  position: absolute;
+  position: absolute !important;
   background-color: #333;
 }
 

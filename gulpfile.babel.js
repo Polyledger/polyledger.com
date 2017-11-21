@@ -27,13 +27,13 @@ gulp.task('minify-html', () => {
 })
 
 gulp.task('minify-css', ['clean-css'], () => {
-  return gulp.src('css/*.css')
+  return gulp.src(['css/*.css'], '!css/vendor/**')
     .pipe(sourcemaps.init())
     .pipe(concat('stylesheet.min.css'))
     .pipe(minifyCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('css'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('css'))
 })
 
 gulp.task('minify-js', ['clean-js'], () => {
@@ -45,7 +45,7 @@ gulp.task('minify-js', ['clean-js'], () => {
     .on('error', (err) => { util.log(util.colors.red('[Error]'), err.toString())})
     .pipe(gulp.dest('js'))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('js'))
 })
 
 gulp.task('watch', () => {

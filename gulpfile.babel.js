@@ -11,16 +11,6 @@ let minifyCSS  = require('gulp-clean-css')
 let sourcemaps = require('gulp-sourcemaps')
 let cachebust  = require('gulp-cache-bust')
 let minifyJS   = require('gulp-uglify')
-let deploy     = require('gulp-gh-pages')
-
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', ['minify-html', 'minify-css', 'minify-js'], () => {
-  return gulp.src(['css/**/*.min.css', 'js/**/*.min.js'])
-    .pipe(cachebust({type: 'timestamp'}))
-    .pipe(deploy())
-})
 
 gulp.task('clean-js', () => {
 	return del(['js/bundle.min.js'])

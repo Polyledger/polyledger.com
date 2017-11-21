@@ -26,8 +26,8 @@ $ gulp
 
 ## Deployment
 
-Use subtree push to send `/dist` to the `gh-pages` branch.
+Simply push to the `master` branch.
 
 ```
-git subtree push --prefix dist origin gh-pages
+$ git push origin master
 ```

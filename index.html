@@ -1,8 +1,8 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Polyledger | Cryptocurrency Investment Platform</title>
     <meta property="og:title" content="Polyledger">
     <meta property="og:type" content="website">
@@ -33,47 +33,48 @@
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
+    
     <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
-      <ul class="nav nav-bordered nav-stacked">
+      <ul class="nav nav-bordered nav-stacked flex-column">
         <li class="nav-header">Polyledger</li>
-        <li class="active">
-          <a href="#about" data-target="#stage" data-toggle="stage">About</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" data-target="#stage" data-toggle="stage">About</a>
         </li>
-        <li>
-          <a href="#open-account" data-target="#stage" data-toggle="stage">Invest</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#open-account" data-target="#stage" data-toggle="stage">Invest</a>
         </li>
       </ul>
     </div>
 
     <div class="stage" id="stage">
       <div class="block block-fill-height polyledger-header">
-        <nav class="navbar navbar-inverse navbar-fixed-top navbar-padded polyledger-navbar">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed p-x-0" data-target="#stage" data-toggle="stage" data-distance="-250">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">
-                <img src="img/logo.png" height="25" style="margin-top: 15px;">
-              </a>
-            </div>
-            <div class="navbar-collapse collapse text-uppercase">
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#about">About</a>
+        <div class="py-4 fixed-top polyledger-navbar">
+          <nav class="container navbar navbar-padded navbar-toggleable-sm">
+            <button
+              class="navbar-toggler navbar-toggler-right hidden-md-up"
+              type="button"
+              data-target="#stage"
+              data-toggle="stage"
+              data-distance="-250">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#">
+              <img src="img/logo.png" height="25" style="margin-top: 15px;">
+            </a>
+            <div class="hidden-sm-down text-uppercase">
+              <ul class="navbar-nav">
+                <li class="nav-item px-1 ">
+                  <a class="nav-link" href="#about">About</a>
                 </li>
-                <li>
-                  <a href="#open-account">Invest</a>
+                <li class="nav-item px-1 ">
+                  <a class="nav-link" href="#open-account">Invest</a>
                 </li>
               </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </nav>
-        <div class="block-xs-top">
+            </div>
+          </nav>
+        </div>
+
+        <div class="block-xs-middle">
           <div class="container">
             <div class="row">
               <div class="col-sm-10 col-md-10">
@@ -88,80 +89,113 @@
         </div>
       </div>
 
-      <div class="block polyledger-ribbon">
-        <div class="container m-b-md" id="details">
-          <h2 class="text-center">Eligibility &amp; Details</h2>
-          <div class="col-md-6">
-            <ul style="border: 1px solid #333; padding-top: 15px;">
-              <li><p class="lead">$10,000 minimum investment</p></li>
-              <li><p class="lead">Highly liquid&mdash;No holding periods</p></li>
-              <li><p class="lead">Exposure to top cryptocurrencies</p></li>
-            <ul>
-          </div>
-          <div class="col-md-6">
-            <ul style="border: 1px solid #333; padding-top: 15px;">
-              <li><p class="lead">Low 2-3% annual management fee</p></li>
-              <li><p class="lead">Portfolio composed by risk tolerance</p></li>
-              <li><p class="lead">US-based accredited investors only</p></li>
-            </ul>
+      <div class="block polyledger-price-plans" id="details">
+        <div class="container text-center">
+          <div class="row mb-5">
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <h3>Eligibility &amp; Details</h3>
+            </div>
           </div>
 
-        </div>
-        <div class="container text-center">
-          <h2>Subscribe to our newsletter</h2>
-          <p class="lead">Get updates about our automated crypto-investment platform.<p>
-          <form action="https://formspree.io/info@polyledger.com" method="POST" class="form-inline" id="signup">
-            <input type="text" name="name" placeholder="Name" class="form-control m-b">
-            <input type="email" name="_replyto" placeholder="Your email" class="form-control m-b">
-            <input class="btn btn-dark m-b" type="submit" value="Subscribe">
-          </form>
+          <div class="row">
+            <div class="col-md-4 offset-md-2 px-4 pb-2 mb-5">
+              <div class="px-2 mb-2">
+                <h5 class="text-muted text-uppercase mb-4">FREE</h5>
+                <p class="pb-2">Analytics to make crypto investment decisions.</p>
+              </div>
+
+              <ul class="list-unstyled list-bordered text-xs-left my-4">
+                <li class="py-4">Choose from 10 native cryptocurrencies</li>
+                <li class="py-4">Risk profile assessment</li>
+                <li class="py-4">Mean-variance portfolio allocation</li>
+                <li class="py-4">Portfolio historical performance charts</li>
+              </ul>
+
+              <button class="btn btn-lg btn-dark btn-block">
+                Start <span class="hidden-lg-down">a free account</span>
+              </button>
+            </div>
+
+            <div class="col-md-4 px-4 pb-2 mb-5">
+              <div class="px-2">
+                <h5 class="text-muted text-uppercase mb-4">PREMIUM</h5>
+                <p class="pb-2">Get an auto-managed crypto portfolio.*</p>
+              </div>
+
+              <ul class="list-unstyled list-bordered text-xs-left my-4">
+                <li class="py-4">Weekly, monthly, or quarterly rebalancing</li>
+                <li class="py-4">Highly liquid&mdash;No holding periods</li>
+                <li class="py-4">Low 2-3% annual management fee</li>
+                <li class="py-4">$10,000 minimum investment</li>
+              </ul>
+
+              <button class="btn btn-lg btn-dark btn-block" disabled>
+                Coming Soon
+              </button>
+            </div>
+          </div>
+          
+          <div class="row mb-5">
+            <div class="container text-center">
+              <p>*US-based accredited investors only.</p>
+            </div>
+          </div>
+          
+          <div class="container text-center py-5">
+            <h2>Subscribe to our newsletter</h2>
+            <p class="lead">Get updates about our automated crypto-investment platform.<p>
+            <form action="https://formspree.io/info@polyledger.com" method="POST" class="form-inline d-flex justify-content-center" id="signup">
+              <input type="text" name="name" placeholder="Name" class="form-control">
+              <input type="email" name="_replyto" placeholder="Your email" class="form-control">
+              <input class="btn btn-dark" type="submit" value="Subscribe">
+            </form>
+          </div>
         </div>
       </div>
 
-
       <div class="block block-secondary polyledger-block-marketing-grid" style="background-color: #4B77BE;" id="about">
-        <div class="container text-center">
-          <div class="row m-b-lg">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-              <h6 class="text-muted text-uppercase">Inside the machine</h6>
-              <h3  class="m-t-0 m-b">Cryptocurrency portfolios powered by data analytics.</h3>
+        <div class="container text-xs-center">
+          <div class="row mb-5">
+            <div class="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+              <h6 class="text-muted text-uppercase mb-2">Inside the machine</h6>
+              <h3  class="mb-4">Cryptocurrency portfolios powered by data analytics.</h3>
             </div>
           </div>
           <div class="row polyledger-marketing-grid">
-            <div class="col-sm-4 p-x-md m-b-lg">
-              <img class="m-b animated" src="./img/bar-chart.png" width="150" id="animated-2">
+            <div class="col-md-4 px-4 mb-5">
+              <img class="mb-1 animated" src="./img/bar-chart.png" width="150" id="animated-2">
               <p><strong>Data-driven.</strong> Your portfolio is rebalanced periodically to achieve your goals.</p>
             </div>
-            <div class="col-sm-4 p-x-md m-b-lg">
-              <img class="m-b animated" src="./img/data-processing.png" width="150" id="animated-4">
+            <div class="col-md-4 px-4 mb-5">
+              <img class="mb-1 animated" src="./img/data-processing.png" width="150" id="animated-4">
               <p><strong>Fully automated.</strong> We manage your portfolio so you don't have to.</p>
             </div>
-            <div class="col-sm-4 p-x-md m-b-lg">
-              <img class="m-b animated" src="./img/dice.png" width="150" id="animated-1">
+            <div class="col-md-4 px-4 mb-5">
+              <img class="mb-1 animated" src="./img/dice.png" width="150" id="animated-1">
               <p><strong>Risk Aware.</strong> We create your portfolio catered to your risk tolerance.</p>
             </div>
           </div>
           <div class="row polyledger-marketing-grid">
-            <div class="col-sm-4 p-x-md m-b-lg">
-              <img class="m-b animated" src="./img/compute-data.png" width="150" id="animated-3">
+            <div class="col-md-4 px-4 mb-5">
+              <img class="mb-1 animated" src="./img/compute-data.png" width="150" id="animated-3">
               <p><strong>Real-time insights.</strong> See the real-time value of your portfolio.</p>
             </div>
-            <div class="col-sm-4 p-x-md m-b-lg">
-              <img class="m-b animated" src="./img/coins.png" width="150" id="animated-5">
+            <div class="col-md-4 px-4 mb-5">
+              <img class="mb-1 animated" src="./img/coins.png" width="150" id="animated-5">
               <p><strong>Diversified.</strong> We can invest in <i>more</i> than just the top 20 coins.</p>
             </div>
-            <div class="col-sm-4 p-x-md m-b-lg">
-              <img class="m-b animated" src="./img/data-report.png" width="150" id="animated-6">
+            <div class="col-md-4 px-4 mb-5">
+              <img class="mb-1 animated" src="./img/data-report.png" width="150" id="animated-6">
               <p><strong>Better record-keeping.</strong> We provide you with the necessary tax documents to report your income.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="block block-secondary polyledger-pulse-block m-b-lg" id="open-account">
+      <div class="block block-secondary polyledger-beta-block mb-5" id="open-account">
         <div class="container">
-          <div class="row polyledger-align-center">
-            <div class="col-md-6 col-md-offset-3">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
               <h1 class="text-center">Early Access Request</h1>
               <p class="lead text-center">Be first to invest with personalized crypto-portfolios</p>
               <form action="https://formspree.io/info@polyledger.com" method="POST">
@@ -490,40 +524,42 @@
         </div>
       </div>
 
-      <div class="p-y-lg polyledger-ribbon">
+      <div class="py-5 polyledger-ribbon">
         <div class="container text-center">
-          <div class="col-md-4 col-sm-1">
-            <a href="https://twitter.com/polyledger" target="blank">
-              <i class="icon icon-twitter-with-circle social-icon"></i>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-1">
-            <a href="https://github.com/polyledger" class="social-icon-github" target="blank">
-              <i class="icon icon-github-with-circle social-icon"></i>
-            </a>
-          </div>
-          <div class="col-md-4 col-sm-1">
-            <a href="https://www.linkedin.com/company/18238416/" class="social-icon-linkedin" target="blank">
-              <i class="icon icon-linkedin-with-circle social-icon"></i>
-            </a>
+          <div class="row">
+            <div class="col-md-4 col-sm-1">
+              <a href="https://twitter.com/polyledger" target="blank">
+                <i class="icon icon-twitter-with-circle social-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-1">
+              <a href="https://github.com/polyledger" class="social-icon-github" target="blank">
+                <i class="icon icon-github-with-circle social-icon"></i>
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-1">
+              <a href="https://www.linkedin.com/company/18238416/" class="social-icon-linkedin" target="blank">
+                <i class="icon icon-linkedin-with-circle social-icon"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="block block-inverse app-footer">
+      <div class="block block-inverse polyledger-footer">
         <div class="container">
           <div class="row">
-            <div class="col-sm-5 m-b-md">
+            <div class="col-sm-5 mb-4">
               <ul class="list-unstyled list-spaced">
-                <li class="m-b"><h6 class="text-uppercase">About</h6></li>
+                <li class="mb-3"><h6 class="text-uppercase">About</h6></li>
                 <li class="text-muted">
                  Polyledger is an organization based in Palo Alto and Berkeley, California</a>. Our goal is to make diversified cryptocurrency investing hands-off and easy. We believe in the power of cryptocurrencies and blockchains to create a more stable and efficient financial system.
                 </li>
               </ul>
             </div>
-            <div class="col-sm-5 col-sm-offset-1 m-b-md">
+            <div class="col-sm-5 offset-sm-1 mb-4">
               <ul class="list-unstyled list-spaced">
-                <li class="m-b"><h6 class="text-uppercase">Join the project</h6></li>
+                <li class="mb-3"><h6 class="text-uppercase">Join the project</h6></li>
                 <li class="text-muted">
                  Polyledger is looking to build a core team of software engineers and designers. Send a quick note to <a href="mailto:info@polyledger.com">info@polyledger.com</a> if you're interested in creating the future of investing.
                 </li>
@@ -533,8 +569,8 @@
           <hr>
           <div class="row">
             <div class="col-md-12">
+              <h6 class="mb-4">Disclaimer</h6>
               <small class="text-muted">
-                <h5>Disclaimer</h5>
                 <p>Polyledger is not a registered investment advisor. Our investment advice is 100% free.</p>
                 <p>By using this website, you understand the information being presented is provided for informational purposes only. Polyledger relies on information from various sources believed to be reliable, including clients and third parties, but cannot guarantee the accuracy and completeness of that information.</p>
                 <p>Investing in cryptocurrencies involves huge risk, including the possible loss of money you invest, and past performance does not guarantee future performance. Historical returns, expected returns, and probability projections are provided for informational and illustrative purposes, and may not reflect actual future performance.</p>

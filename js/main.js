@@ -10,8 +10,7 @@
      '#animated-3': 'slideInRight',
      '#animated-4': 'slideInLeft',
      '#animated-5': 'slideInUp',
-     '#animated-6': 'slideInRight',
-     '#animated-7': 'slideInLeft'
+     '#animated-6': 'slideInRight'
    }
 
    for (let id in animations) {

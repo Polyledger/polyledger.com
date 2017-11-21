@@ -51,7 +51,7 @@ gulp.task('minify-js', ['clean-js'], () => {
 gulp.task('watch', () => {
   gulp.watch('index.html', ['minify-html'])
   gulp.watch(['css/**/*.css', '!css/stylesheet.min.css'], ['minify-css'])
-  gulp.watch(['js/**/*.js', '!js/bundle.min.css'], ['minify-js'])
+  gulp.watch(['js/**/*.js', '!js/bundle.min.js'], ['minify-js'])
 })
 
 gulp.task('default', ['watch'])

@@ -2,6 +2,9 @@
 .nav-link {
   color: #fff;
 }
+.nav-link:hover {
+  color: #eee;
+}
 
 /* primary button override */
 

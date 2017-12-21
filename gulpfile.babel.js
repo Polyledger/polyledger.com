@@ -15,7 +15,7 @@ let minifyJS   = require('gulp-uglify')
 gulp.task('clean-js', () => {
 	return del(['js/bundle.min.js'])
 })
- 
+
 gulp.task('clean-css', () => {
 	return del(['css/stylesheet.min.css'])
 })
@@ -27,7 +27,7 @@ gulp.task('minify-html', () => {
 })
 
 gulp.task('minify-css', ['clean-css'], () => {
-  return gulp.src(['css/*.css'], '!css/vendor/**')
+  return gulp.src(['css/*.css', '!css/vendor/**'])
     .pipe(sourcemaps.init())
     .pipe(concat('stylesheet.min.css'))
     .pipe(minifyCSS({compatibility: 'ie8'}))

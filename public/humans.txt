@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Matthew Rosendin -- Founder -- @mattrosendin
+
+# THANKS
+
+  Michael Rosendin
+
+# TECHNOLOGY COLOPHON
+
+  CSS3, HTML5
+  Surh.sh, jQuery, Modernizr, Normalize.css, Bootstrap

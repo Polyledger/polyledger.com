@@ -1,33 +1,43 @@
 {
-    "name": "polyledger.com",
-    "version": "0.1.0",
-    "private": true,
-    "homepage": "https://polyledger.github.io/polyledger.com",
-    "devDependencies": {
-        "eslint-plugin-prettier": "^2.6.0",
-        "prettier": "^1.10.2",
-        "react-scripts": "1.1.1"
-    },
-    "dependencies": {
-        "gh-pages": "^1.1.0",
-        "husky": "^0.14.3",
-        "lint-staged": "^6.1.1",
-        "react": "^16.2.0",
-        "react-dom": "^16.2.0"
-    },
-    "lint-staged": {
-        "src/**/*.{js,jsx,json,css}": [
-            "prettier --single-quote --write",
-            "git add"
-        ]
-    },
-    "scripts": {
-        "precommit": "lint-staged",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject"
-    }
+	"name": "polyledger.com",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://polyledger.github.io/polyledger.com",
+	"devDependencies": {
+		"eslint-plugin-prettier": "^2.6.0",
+		"prettier": "^1.10.2",
+		"react-scripts": "1.1.1"
+	},
+	"dependencies": {
+		"add": "^2.0.6",
+		"bootstrap": "^4.0.0",
+		"gh-pages": "^1.1.0",
+		"husky": "^0.14.3",
+		"jquery": "^3.3.1",
+		"lint-staged": "^6.1.1",
+		"node-sass-chokidar": "^0.0.3",
+		"npm-run-all": "^4.1.2",
+		"open-iconic": "^1.1.1",
+		"popper.js": "^1.12.9",
+		"react": "^16.2.0",
+		"react-dom": "^16.2.0",
+		"yarn": "^1.3.2"
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+	},
+	"scripts": {
+		"build-css":
+			"node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles/",
+		"watch-css":
+			"npm run build-css && node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles --watch --recursive",
+		"precommit": "lint-staged",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
+		"start-js": "react-scripts start",
+		"start": "npm-run-all -p watch-css start-js",
+		"build": "npm run build-css && react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject"
+	}
 }

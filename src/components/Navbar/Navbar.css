@@ -1,0 +1,10 @@
+.Navbar {
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	position: absolute !important;
+	background-color: #1b1b1b;
+}
+
+.Navbar-logo {
+	padding-top: 5px;
+}

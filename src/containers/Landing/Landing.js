@@ -21,7 +21,7 @@ class Landing extends Component {
 						<div className="row pt-5 mt-5">
 							<div className="col-12">
 								<h1>Digital currency portfolios made simple</h1>
-								<h4 className="mb-4">Stop manually tracking your crypto portfolio</h4>
+								<h4 className="mb-4">Reduce the uncertainty of your holdings</h4>
 							</div>
 						</div>
 						<div className="row py-5 my-5">
@@ -57,25 +57,27 @@ class Landing extends Component {
 									past year.
 								</h2>
 								<p className="lead mb-4">
-									We combine immediate real time events with rich historical data to help
-									answer the toughest questions about retention, growth, and engagement.
+									We're committed to creating new financial services for cryptoassets.
+									Our first service is a portfolio allocation advisor that helps reduce
+									your downside-risk while maximizing returns.
 								</p>
 								<div className="row">
 									<div className="col-sm-6 mb-3">
-										<h5>Data frequency</h5>
+										<h5>10 Cryptoassets</h5>
 										<p>
-											We poll for data on a millisecond basis. You can react to new
-											information in seconds rather than days.{' '}
+											We offer 10 cryptoassets that have at least 6 months of historical
+											pricing data that we believe to be safe, secure, & reliable long-term
+											bets.{' '}
 											<a href="" className="text-primary">
 												Learn more.
 											</a>
 										</p>
 									</div>
 									<div className="col-sm-6">
-										<h5>Reliability &amp; uptime</h5>
+										<h5>Industry Leader</h5>
 										<p>
-											We process our data across a massively distributed network of
-											reliable servers to ensure 99.99% uptime, always.{' '}
+											Our backtests show that our portfolios lead the industry. See how our
+											portfolios outperform Bitcoin and the Bitwise HOLD 10.{' '}
 											<a href="" className="text-primary">
 												Learn more
 											</a>.
@@ -91,6 +93,7 @@ class Landing extends Component {
 					<div className="container text-center">
 						<div className="row mb-5">
 							<div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+								<h6 className="text-muted">Coming Soon</h6>
 								<h3 className="mb-4">
 									Digital currency portfolios that reduce downside risk
 								</h3>

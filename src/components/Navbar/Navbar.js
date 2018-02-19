@@ -36,11 +36,6 @@ class Navbar extends Component {
 									Methodology
 								</a>
 							</li>
-							<li className="nav-item">
-								<a className="nav-link disabled" href="">
-									Log In
-								</a>
-							</li>
 						</ul>
 					</div>
 				</nav>

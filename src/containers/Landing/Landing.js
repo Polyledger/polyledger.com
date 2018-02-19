@@ -13,17 +13,24 @@ class Landing extends Component {
 	render() {
 		return (
 			<div>
-				<div className="block text-center d-flex align-items-center">
+				<div
+					className="block text-center d-flex align-items-center"
+					style={{ backgroundColor: '#f5f6fa' }}
+				>
 					<div className="container-fluid">
+						<div className="row pt-5 mt-5">
+							<div className="col-12">
+								<h1>Digital currency portfolios made simple</h1>
+								<h4 className="mb-4">Stop manually tracking your crypto portfolio</h4>
+							</div>
+						</div>
 						<div className="row py-5 my-5">
 							<div className="col-md-6 offset-md-3 col-sm-12">
 								<Chart />
 							</div>
 						</div>
-						<div className="row py-5">
+						<div className="row py-5 my-5">
 							<div className="col-12">
-								<h1>Digital currency portfolios made simple</h1>
-								<h4 className="mb-4">Stop manually tracking your crypto portfolio</h4>
 								<form className="form-inline d-flex justify-content-center">
 									<input className="form-control mb-3 mx-1" placeholder="Email" />
 									<button className="btn btn-primary mb-3">Get Early Access</button>
@@ -36,6 +43,7 @@ class Landing extends Component {
 						</div>
 					</div>
 				</div>
+
 				<div className="block">
 					<div className="container-fluid">
 						<div className="row d-flex align-items-center">
@@ -79,7 +87,7 @@ class Landing extends Component {
 					</div>
 				</div>
 
-				<div className="block">
+				<div className="block" style={{ backgroundColor: '#dcdde1' }}>
 					<div className="container text-center">
 						<div className="row mb-5">
 							<div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">

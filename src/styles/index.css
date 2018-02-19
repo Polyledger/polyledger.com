@@ -3368,13 +3368,13 @@ tbody.collapse.show {
 }
 .custom-control-input:active ~ .custom-control-label::before {
 	color: #fff;
-	background-color: #06ffce;
+	background-color: #6cffe2;
 }
 .custom-control-input:disabled ~ .custom-control-label {
 	color: #6c757d;
 }
 .custom-control-input:disabled ~ .custom-control-label::before {
-	background-color: #f2f2f2;
+	background-color: #e9ecef;
 }
 
 .custom-control-label {
@@ -3390,7 +3390,7 @@ tbody.collapse.show {
 	pointer-events: none;
 	content: '';
 	user-select: none;
-	background-color: #fff;
+	background-color: #dee2e6;
 }
 .custom-control-label::after {
 	position: absolute;
@@ -4051,7 +4051,7 @@ tbody.collapse.show {
 	word-wrap: break-word;
 	background-color: #fff;
 	background-clip: border-box;
-	border: 1px solid transparent;
+	border: 1px solid rgba(0, 0, 0, 0.125);
 	border-radius: 0.25rem;
 }
 .card > hr {
@@ -4097,7 +4097,7 @@ tbody.collapse.show {
 	padding: 0.75rem 1.25rem;
 	margin-bottom: 0;
 	background-color: rgba(0, 0, 0, 0.03);
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-header:first-child {
 	border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -4109,7 +4109,7 @@ tbody.collapse.show {
 .card-footer {
 	padding: 0.75rem 1.25rem;
 	background-color: rgba(0, 0, 0, 0.03);
-	border-top: 1px solid transparent;
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
 	border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);

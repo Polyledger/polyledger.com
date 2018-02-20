@@ -91,12 +91,8 @@ class Chart extends Component {
 			.catch(error => console.log(error));
 	}
 
-	componentWillReceiveProps(props) {
-		console.log(props);
-	}
-
 	componentWillUnmount() {
-		this.chart.destroy();
+		if (this.chart) this.chart.destroy();
 	}
 
 	render() {

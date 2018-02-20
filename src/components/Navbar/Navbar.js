@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../images/logo.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -8,9 +8,9 @@ class Navbar extends Component {
 		return (
 			<div className="Navbar fixed-top">
 				<nav className="container navbar navbar-padded navbar-expand-lg navbar-light">
-					<Link to="/" className="navbar-brand">
+					<NavLink to="/" className="navbar-brand">
 						<img src={logo} height="50" alt="logo" />
-					</Link>
+					</NavLink>
 
 					<button
 						className="navbar-toggler"
@@ -26,15 +26,19 @@ class Navbar extends Component {
 
 					<div className="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul className="navbar-nav ml-auto">
-							<li className="nav-item active">
-								<a className="nav-link" href="">
+							<li className="nav-item">
+								<NavLink exact to="/" className="nav-link" activeClassName="active">
 									Home
-								</a>
+								</NavLink>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="">
+								<NavLink
+									to="/methodology"
+									className="nav-link"
+									activeClassName="active"
+								>
 									Methodology
-								</a>
+								</NavLink>
 							</li>
 						</ul>
 					</div>

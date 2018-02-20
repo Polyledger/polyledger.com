@@ -18,16 +18,12 @@ Install the NPM modules
 $ npm i
 ```
 
-Run [gulp](https://gulpjs.com/)
-
-```
-$ gulp
-```
-
 ## Deployment
 
-Simply push to the `master` branch.
+```
+$ npm run predeploy
+```
 
 ```
-$ git push origin master
+$ npm run deploy
 ```

@@ -21,7 +21,7 @@ class Landing extends Component {
 						<div className="row pt-5 mt-5">
 							<div className="col-12">
 								<h1>Digital currency portfolios made simple</h1>
-								<h4 className="mb-4">Reduce the uncertainty of your holdings</h4>
+								<h4 className="mb-4">Stop managing your crypto investments manually</h4>
 							</div>
 						</div>
 						<div className="row py-5 my-5">
@@ -95,7 +95,7 @@ class Landing extends Component {
 							<div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
 								<h6 className="text-muted">Coming Soon</h6>
 								<h3 className="mb-4">
-									Digital currency portfolios that reduce downside risk
+									A complete digital currency portfolio management solution
 								</h3>
 							</div>
 						</div>

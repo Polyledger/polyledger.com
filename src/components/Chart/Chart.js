@@ -14,7 +14,7 @@ class Chart extends Component {
 	}
 
 	componentDidMount() {
-		fetch('http://localhost:8000/api/portfolios/public_charts', {
+		fetch('https://app.polyledger.com/api/portfolios/public_charts', {
 			method: 'GET'
 		})
 			.then(response =>

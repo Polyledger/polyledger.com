@@ -190,26 +190,26 @@ class Landing extends Component {
 				</div>
 
 				<div
-					class="modal fade"
+					className="modal fade"
 					id="termsOfService"
-					tabindex="-1"
+					tabIndex="-1"
 					role="dialog"
 					aria-hidden="true"
 				>
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Terms of Service</h5>
+					<div className="modal-dialog" role="document">
+						<div className="modal-content">
+							<div className="modal-header">
+								<h5 className="modal-title">Terms of Service</h5>
 								<button
 									type="button"
-									class="close"
+									className="close"
 									data-dismiss="modal"
 									aria-label="Close"
 								>
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
-							<div class="modal-body">
+							<div className="modal-body">
 								<h2>Polyledger Inc. Terms of Service</h2>
 								<h3>1. Terms</h3>
 								<p>
@@ -316,8 +316,12 @@ class Landing extends Component {
 									jurisdiction of the courts in that State or location.
 								</p>
 							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">
+							<div className="modal-footer">
+								<button
+									type="button"
+									className="btn btn-secondary"
+									data-dismiss="modal"
+								>
 									Close
 								</button>
 							</div>

@@ -52,7 +52,7 @@ class Chart extends Component {
 									result +=
 										'<span style="color:' + value.series.color + '">\u25CF</span> ';
 									result += value.series.name + ': ';
-									result += numeral(value.y).format('0,0.00%');
+									result += numeral(value.y).format('0,0%');
 									result += '<br>';
 								});
 								return result;

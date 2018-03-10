@@ -71,7 +71,7 @@ class Chart extends Component {
 							gridLineWidth: 0,
 							labels: {
 								formatter() {
-									return numeral(this.value).format('$0,0');
+									return numeral(this.value).format('0,0.00%');
 								},
 								style: {
 									color: '#333'
@@ -79,7 +79,7 @@ class Chart extends Component {
 							},
 							minorGridLineWidth: 0,
 							title: {
-								text: 'Value (USD)',
+								text: 'Cumulative Return',
 								style: {
 									color: '#333'
 								}

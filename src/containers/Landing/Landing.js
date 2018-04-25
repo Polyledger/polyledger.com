@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import polyledger from '../../images/polyledger.png';
 import macbook from '../../images/macbook.png';
 import AutomatedIcon from '../../images/automated-icon.png';
 import DataDrivenIcon from '../../images/data-driven-icon.png';
@@ -26,7 +27,7 @@ class Landing extends Component {
 						</div>
 						<div className="row py-5 my-5">
 							<div className="col-md-6 offset-md-3 col-sm-12">
-								<Chart />
+								<img src={polyledger} width="100%" />
 							</div>
 						</div>
 						<div className="row py-5 my-5">

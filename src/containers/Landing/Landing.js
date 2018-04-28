@@ -7,7 +7,16 @@ import DiversifiedIcon from '../../images/diversified-icon.png';
 import ConsolidatedIcon from '../../images/consolidated-icon.png';
 import PersonalizedIcon from '../../images/personalized-icon.png';
 import CompliantIcon from '../../images/compliant-icon.png';
-import Chart from '../../components/Chart/Chart';
+import BinanceLogo from '../../images/exchanges/binance.svg';
+import BitstampLogo from '../../images/exchanges/bitstamp.png';
+import BittrexLogo from '../../images/exchanges/bittrex.svg';
+import CexLogo from '../../images/exchanges/cex.png';
+import CoinbaseLogo from '../../images/exchanges/coinbase.svg';
+import GDAXLogo from '../../images/exchanges/gdax.svg';
+import GeminiLogo from '../../images/exchanges/gemini.svg';
+import HitBTCLogo from '../../images/exchanges/hitbtc.png';
+import KrakenLogo from '../../images/exchanges/kraken.png';
+import PoloniexLogo from '../../images/exchanges/poloniex.png';
 import './Landing.css';
 
 class Landing extends Component {
@@ -27,7 +36,7 @@ class Landing extends Component {
 						</div>
 						<div className="row py-5 my-5">
 							<div className="col-md-6 offset-md-3 col-sm-12">
-								<img src={polyledger} width="100%" />
+								<img src={polyledger} width="100%" alt="" />
 							</div>
 						</div>
 						<div className="row py-5 my-5">
@@ -59,6 +68,157 @@ class Landing extends Component {
 					</div>
 				</div>
 
+				<div className="block" style={{ backgroundColor: '#252930' }}>
+					<div className="container text-center">
+						<div className="row mb-5">
+							<div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+								<h6 style={{ color: '#00ba95' }}>Coming Soon</h6>
+								<h3 className="mb-4" style={{ color: '#ffffff' }}>
+									A complete digital currency portfolio management solution
+								</h3>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-md-4 px-4 mb-5">
+								<img className="mb-1" src={ConsolidatedIcon} width="150" alt="" />
+								<p style={{ color: '#ffffff' }}>
+									<strong>Consolidated.</strong> See the market value of your aggregate
+									portfolio. Track &amp; analyze your performance.
+								</p>
+							</div>
+							<div className="col-md-4 px-4 mb-5">
+								<img className="mb-1" src={AutomatedIcon} width="150" alt="" />
+								<p style={{ color: '#ffffff' }}>
+									<strong>Automated.</strong> Update your portfolio with one-click
+									rebalancing to maintain the health of your portfolio.
+								</p>
+							</div>
+							<div className="col-md-4 px-4 mb-5">
+								<img className="mb-1" src={DiversifiedIcon} width="150" alt="" />
+								<p style={{ color: '#ffffff' }}>
+									<strong>Diversified.</strong> We offer access to coins covering 99% of
+									the crypto market cap, connecting to exchanges and 1,400+ individual
+									cryptoassets.
+								</p>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-md-4 px-4 mb-5">
+								<img className="mb-1" src={DataDrivenIcon} width="150" alt="" />
+								<p style={{ color: '#ffffff' }}>
+									<strong>Smart.</strong> Our allocation engine provides recommendations
+									to reduce your portfolio risk.
+								</p>
+							</div>
+							<div className="col-md-4 px-4 mb-5">
+								<img className="mb-1" src={PersonalizedIcon} width="150" alt="" />
+								<p style={{ color: '#ffffff' }}>
+									<strong>Personalized.</strong> Receive advice personalized to your
+									investment strategy, objectives, and risk profile.
+								</p>
+							</div>
+							<div className="col-md-4 px-4 mb-5">
+								<img className="mb-1" src={CompliantIcon} width="150" alt="" />
+								<p style={{ color: '#ffffff' }}>
+									<strong>Compliant.</strong> We're streamlining the administrative
+									processes of investing in crypto so you can do more.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div className="block" style={{ backgroundColor: '#dcdde1' }}>
+					<div className="container">
+						<div className="row">
+							<div className="col-12">
+								<h3 className="text-center">
+									We connect to the most popular exchanges
+								</h3>
+								<p className="text-center mb-5">And 1400+ individual cryptoassets</p>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-md-4 text-center">
+								<img
+									src={BinanceLogo}
+									height="50"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+							<div className="col-md-4 text-center">
+								<img
+									src={BitstampLogo}
+									height="50"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+							<div className="col-md-4 text-center">
+								<img
+									src={BittrexLogo}
+									height="40"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-md-4 text-center">
+								<img src={CexLogo} height="50" className="m-3 img-responsive" alt="" />
+							</div>
+							<div className="col-md-4 text-center">
+								<img
+									src={CoinbaseLogo}
+									height="45"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+							<div className="col-md-4 text-center">
+								<img src={GDAXLogo} height="50" className="m-3 img-responsive" alt="" />
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-md-4 text-center">
+								<img
+									src={GeminiLogo}
+									height="50"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+							<div className="col-md-4 text-center">
+								<img
+									src={PoloniexLogo}
+									height="40"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+							<div className="col-md-4 text-center">
+								<img
+									src={KrakenLogo}
+									height="40"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-md-4 offset-md-4 text-center">
+								<img
+									src={HitBTCLogo}
+									height="60"
+									className="m-3 img-responsive"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div className="block">
 					<div className="container-fluid">
 						<div className="row d-flex align-items-center">
@@ -66,15 +226,15 @@ class Landing extends Component {
 								<img src={macbook} alt="macbook" width="100%" />
 							</div>
 							<div className="col-md-5 col-sm-12">
-								<h6 className="text-muted text-uppercase">Sign up now</h6>
+								<h6 className="text-muted text-uppercase">Sign up for early access</h6>
 								<h2>
-									Access the portfolio allocation algorithm that has 6x ROI over BTC this
-									past year.
+									Get advice from our portfolio allocation algorithm yielding 7x ROI over
+									BTC in 2017.
 								</h2>
 								<p className="lead mb-4">
-									We're committed to creating new financial services for cryptoassets.
-									Our first service is a portfolio allocation advisor that helps reduce
-									your downside-risk while maximizing returns.
+									We're committed to creating new financial services for cryptoassets. We
+									will be launching a portfolio allocation advisor that helps reduce your
+									downside-risk while maximizing returns.
 								</p>
 								<div className="row">
 									<div className="col-sm-6 mb-3">
@@ -101,63 +261,30 @@ class Landing extends Component {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-
-				<div className="block" style={{ backgroundColor: '#dcdde1' }}>
-					<div className="container text-center">
-						<div className="row mb-5">
-							<div className="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
-								<h6 className="text-muted">Coming Soon</h6>
-								<h3 className="mb-4">
-									A complete digital currency portfolio management solution
-								</h3>
-							</div>
-						</div>
-						<div className="row">
-							<div className="col-md-4 px-4 mb-5">
-								<img className="mb-1" src={DataDrivenIcon} width="150" alt="" />
-								<p>
-									<strong>Data-driven.</strong> Our algorithms are designed to grow and
-									protect your digital wealth.
-								</p>
-							</div>
-							<div className="col-md-4 px-4 mb-5">
-								<img className="mb-1" src={AutomatedIcon} width="150" alt="" />
-								<p>
-									<strong>Automated.</strong> Your portfolio is rebalanced periodically
-									to achieve your goals.
-								</p>
-							</div>
-							<div className="col-md-4 px-4 mb-5">
-								<img className="mb-1" src={DiversifiedIcon} width="150" alt="" />
-								<p>
-									<strong>Diversified.</strong> We offer access to coins covering 99% of
-									the crypto market cap.
-								</p>
-							</div>
-						</div>
-						<div className="row">
-							<div className="col-md-4 px-4 mb-5">
-								<img className="mb-1" src={ConsolidatedIcon} width="150" alt="" />
-								<p>
-									<strong>Consolidated.</strong> See the real-time value of your
-									portfolio at any point in time.
-								</p>
-							</div>
-							<div className="col-md-4 px-4 mb-5">
-								<img className="mb-1" src={PersonalizedIcon} width="150" alt="" />
-								<p>
-									<strong>Personalized.</strong> We create your portfolio based on your
-									risk tolerance.
-								</p>
-							</div>
-							<div className="col-md-4 px-4 mb-5">
-								<img className="mb-1" src={CompliantIcon} width="150" alt="" />
-								<p>
-									<strong>Compliant.</strong> We provide you with the necessary tax
-									documents to report your income.
-								</p>
+						<div className="row py-5 my-5 text-center">
+							<div className="col-12">
+								<form
+									action="https://formspree.io/matthew@polyledger.com"
+									method="POST"
+									className="form-inline d-flex justify-content-center"
+								>
+									<input
+										className="form-control mb-3 mx-1"
+										name="_replyto"
+										placeholder="Email"
+									/>
+									<input
+										className="btn btn-primary mb-3"
+										value="Get Early Access"
+										type="submit"
+									/>
+								</form>
+								<small className="text-muted">
+									By clicking "Get Early Access" I agree to the Polyledger{' '}
+									<a href="" data-toggle="modal" data-target="#termsOfService">
+										Terms of service
+									</a>
+								</small>
 							</div>
 						</div>
 					</div>

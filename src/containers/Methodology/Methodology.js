@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Chart from '../../components/Chart/Chart';
 import './Methodology.css';
 
 class Methodology extends Component {
@@ -43,6 +44,13 @@ class Methodology extends Component {
 								</p>
 							</div>
 						</div>
+
+						<div className="row">
+							<div className="col-md-6 offset-md-3 col-sm-12">
+								<Chart />
+							</div>
+						</div>
+
 						<div className="row pt-5 mt-5">
 							<div className="col-md-6">
 								<blockquote className="blockquote">
@@ -55,14 +63,14 @@ class Methodology extends Component {
 							</div>
 							<div className="col-md-6">
 								<h3>Trustless Investing</h3>
-								<p class="text-left">
+								<p className="text-left">
 									You're in control of your portfolio 100% of the time. We don't have
 									access to any customer funds, which means we're in it just to help{' '}
 									<em>you</em>. Our interest is to help people make responsible and
 									rewarding investments in the world's future financial system.
 								</p>
-								<h3 class="pt-4">Personalization</h3>
-								<p class="text-left">
+								<h3 className="pt-4">Personalization</h3>
+								<p className="text-left">
 									Despite all the chaos in the world, we want our clients to know that
 									they matter. We're here to parse through all of the misleading
 									information to help you make informed investment decisions that are

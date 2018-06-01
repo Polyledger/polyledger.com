@@ -18,10 +18,10 @@ $theme-colors: (
 // text overrides
 $body-color: #6c6f73;
 $font-size-base: 15px;
-$font-family-sans-serif: "Libre Baskerville", "Helvetica Neue", Helvetica, Arial,
-	sans-serif;
+$font-family-sans-serif: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: "Lora", "Libre Baskerville", serif;
 $font-family-base: $font-family-sans-serif;
-$headings-font-family: $font-family-sans-serif;
+$headings-font-family: $font-family-serif;
 $text-color: #6c6f73;
 $headings-color: #2d3238;
 $line-height-base: 1.4;

@@ -1,0 +1,19 @@
+.Home__social-icon {
+	font-size: 2.5rem;
+}
+
+.Home__social-icon.icon-twitter-with-circle {
+	color: #2595ff;
+}
+
+.Home__social-icon.icon-github-with-circle {
+	color: #333;
+}
+
+.Home__social-icon.icon-facebook-with-circle {
+	color: #4169af;
+}
+
+.Home__social-icon.icon-linkedin-with-circle {
+	color: #1178b2;
+}

@@ -40,6 +40,20 @@ class Navbar extends Component {
 									Methodology
 								</NavLink>
 							</li>
+							<li className="nav-item">
+								<NavLink to="/team" className="nav-link" activeClassName="active">
+									Team
+								</NavLink>
+							</li>
+							<li className="nav-item">
+								<a
+									className="nav-link"
+									href="https://medium.com/polyledger"
+									target="blank"
+								>
+									Blog
+								</a>
+							</li>
 						</ul>
 					</div>
 				</nav>

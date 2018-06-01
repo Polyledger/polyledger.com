@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Chart from '../../components/Chart/Chart';
+import labratory from '../../images/laboratory.png'
 import './Methodology.css';
 
 class Methodology extends Component {
@@ -13,7 +13,8 @@ class Methodology extends Component {
 					<div className="container">
 						<div className="row pt-5 mt-5">
 							<div className="col-12">
-								<h1 className="pb-5 my-2">Methodology</h1>
+								<h1 className="my-2">Methodology</h1><br />
+								<img className="mb-4" src={labratory} />
 								<h2>Simply making your life easier</h2>
 								<p className="lead text-left">
 									At Polyledger, we're making digital currency portfolios simple. We are
@@ -42,12 +43,6 @@ class Methodology extends Component {
 									this approach to crypto, we are pioneering an innovative method for
 									digital currency investing.
 								</p>
-							</div>
-						</div>
-
-						<div className="row">
-							<div className="col-md-6 offset-md-3 col-sm-12">
-								<Chart />
 							</div>
 						</div>
 

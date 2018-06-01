@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MailchimpSubscribe from "react-mailchimp-subscribe"
 import polyledger from '../../images/polyledger.png';
 import macbook from '../../images/macbook.png';
 import AutomatedIcon from '../../images/automated-icon.png';
@@ -17,10 +18,49 @@ import GeminiLogo from '../../images/exchanges/gemini.svg';
 import HitBTCLogo from '../../images/exchanges/hitbtc.png';
 import KrakenLogo from '../../images/exchanges/kraken.png';
 import PoloniexLogo from '../../images/exchanges/poloniex.png';
-import './Landing.css';
+import './Home.css';
 
-class Landing extends Component {
+const CustomForm = ({ status, message, onValidated }) => {
+  let email;
+  const submit = () =>
+    email &&
+    email.value.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email.value
+    });
+
+  return (
+    <div>
+      {status === "sending" && <div className="text-info">Sending...</div>}
+      {status === "error" && (
+        <div
+					className="text-danger"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+      {status === "success" && (
+        <div
+					className="text-success"
+          dangerouslySetInnerHTML={{ __html: message }}
+        />
+      )}
+			<div className="form-inline d-flex justify-content-center">
+	      <input
+	        ref={node => (email = node)}
+					className="form-control mr-2"
+	        type="email"
+	        placeholder="Your email"
+	      />
+				<button className="btn btn-primary" onClick={submit}>Get Early Access</button>
+			</div>
+    </div>
+  );
+};
+
+class Home extends Component {
 	render() {
+		const url = "https://polyledger.us16.list-manage.com/subscribe/post?u=ff509ccf9b1b0cdada9cf0ffc&amp;id=213d180680";
+
 		return (
 			<div>
 				<div
@@ -41,22 +81,16 @@ class Landing extends Component {
 						</div>
 						<div className="row py-5 my-5">
 							<div className="col-12">
-								<form
-									action="https://formspree.io/matthew@polyledger.com"
-									method="POST"
-									className="form-inline d-flex justify-content-center"
-								>
-									<input
-										className="form-control mb-3 mx-1"
-										name="_replyto"
-										placeholder="Email"
-									/>
-									<input
-										className="btn btn-primary mb-3"
-										value="Get Early Access"
-										type="submit"
-									/>
-								</form>
+								<MailchimpSubscribe
+				          url={url}
+				          render={({ subscribe, status, message }) => (
+				            <CustomForm
+				              status={status}
+				              message={message}
+				              onValidated={formData => subscribe(formData)}
+				            />
+				          )}
+				        />
 								<small className="text-muted">
 									By clicking "Get Early Access" I agree to the Polyledger{' '}
 									<a href="" data-toggle="modal" data-target="#termsOfService">
@@ -261,56 +295,30 @@ class Landing extends Component {
 								</div>
 							</div>
 						</div>
-						<div className="row py-5 my-5 text-center">
-							<div className="col-12">
-								<form
-									action="https://formspree.io/matthew@polyledger.com"
-									method="POST"
-									className="form-inline d-flex justify-content-center"
-								>
-									<input
-										className="form-control mb-3 mx-1"
-										name="_replyto"
-										placeholder="Email"
-									/>
-									<input
-										className="btn btn-primary mb-3"
-										value="Get Early Access"
-										type="submit"
-									/>
-								</form>
-								<small className="text-muted">
-									By clicking "Get Early Access" I agree to the Polyledger{' '}
-									<a href="" data-toggle="modal" data-target="#termsOfService">
-										Terms of service
-									</a>
-								</small>
-							</div>
-						</div>
 					</div>
 				</div>
 
-				<div className="py-5 Landing__social-icons">
+				<div className="py-5 Home__social-icons">
 					<div className="container text-center">
 						<div className="row">
 							<div className="col-md-3 col-sm-1">
 								<a href="https://twitter.com/polyledger" target="blank">
-									<i className="icon icon-twitter-with-circle Landing__social-icon" />
+									<i className="icon icon-twitter-with-circle Home__social-icon" />
 								</a>
 							</div>
 							<div className="col-md-3 col-sm-1">
 								<a href="https://github.com/polyledger" target="blank">
-									<i className="icon icon-github-with-circle Landing__social-icon" />
+									<i className="icon icon-github-with-circle Home__social-icon" />
 								</a>
 							</div>
 							<div className="col-md-3 col-sm-1">
 								<a href="https://www.facebook.com/getpolyledger" target="blank">
-									<i className="icon icon-facebook-with-circle Landing__social-icon" />
+									<i className="icon icon-facebook-with-circle Home__social-icon" />
 								</a>
 							</div>
 							<div className="col-md-3 col-sm-1">
 								<a href="https://www.linkedin.com/company/polyledger/" target="blank">
-									<i className="icon icon-linkedin-with-circle Landing__social-icon" />
+									<i className="icon icon-linkedin-with-circle Home__social-icon" />
 								</a>
 							</div>
 						</div>
@@ -461,4 +469,4 @@ class Landing extends Component {
 	}
 }
 
-export default Landing;
+export default Home;

@@ -68,15 +68,7 @@ class Team extends Component {
 							<div className="col-8 offset-2">
 								<h1>Story</h1>
 								<p className="text-left lead">
-									Matt and Farshad met in graduate school at UC Berkeley in 2016. Drawn
-									by their passion for the science of decision making, they paired up and
-									aced every graduate school project together. It was during the ICO
-									craze of 2017 that they realized that investors lacked the tools to
-									make informed investment decisions. So, they set out to build a
-									platform for intelligent crypto investing with Polyledger. Not long
-									after, Dmitriy and Matt got connected through the ConsenSys blockchain
-									venture competition. They all met together for coffee at Brewed Awaking
-									in Berkeley to build on the web 3.0 and the rest was history.
+									Matt, Farshad, and Dmitriy have been investing in crypto-assets since 2013. As the market became more complex, they struggled to find tools that would help them manage their increasing variety of investments. The team started building Polyledger for themselves in 2017, and want to share their product with the community to enable people to make more intelligent investment decisions.
 								</p>
 							</div>
 						</div>

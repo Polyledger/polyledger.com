@@ -31,7 +31,6 @@
 	"scripts": {
 		"build-css": "node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles/",
 		"watch-css": "npm run build-css && node-sass-chokidar --include-path ./src/styles --include-path ./node_modules src/styles/ -o src/styles --watch --recursive",
-		"precommit": "lint-staged",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
 		"start-js": "react-scripts start",
